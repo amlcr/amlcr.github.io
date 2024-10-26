@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alexis Melchor</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soon...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .popup {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .popup-header {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .popup-content {
+      margin: 20px 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .popup-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+      background-color: #e0e0e0;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d0d0d0;
+    }
+  </style>
 </head>
 <body>
+  <div class="popup">
+    <div class="popup-header">Alert</div>
+    <div class="popup-content">Soon...</div>
+    <div class="popup-buttons">
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
 
-    <header>
-        <h1>Alexis Melchor</h1>
-        <p>Pursuing a B.S. in Business Information Systems @ UC Riverside</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I'm Alexis Melchor, a Business Information Systems student at UC Riverside. I’m passionate about Artificial Intelligence, Machine Learning, Data Science, and Blockchain Technology. Below are some of my skills and projects I’ve worked on!</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: [Project Title]</h3>
-            <p>[Brief description of the project and what technologies you used]</p>
-            <a href="[Link to project]" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2: [Project Title]</h3>
-            <p>[Brief description of the project and what technologies you used]</p>
-            <a href="[Link to project]" target="_blank">View Project</a>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, JavaScript, R</li>
-            <li>Web Development: HTML, CSS, GitHub Pages</li>
-            <li>Data Analysis: Excel, SQL</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </section>
-
+  <script>
+    function closePopup() {
+      document.querySelector('.popup').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
+
